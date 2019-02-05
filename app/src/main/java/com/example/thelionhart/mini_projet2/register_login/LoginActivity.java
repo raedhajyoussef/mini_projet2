@@ -1,6 +1,5 @@
-package com.example.thelionhart.mini_projet2;
+package com.example.thelionhart.mini_projet2.register_login;
 
-import android.app.DownloadManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -18,8 +17,9 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.thelionhart.mini_projet2.List.MainActivity;
+import com.example.thelionhart.mini_projet2.R;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -122,7 +122,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                         JSONObject jsonObject = new JSONObject(response);
                         String succes = jsonObject.getString("succes");
                         if(succes.equals("1")){
-                                Intent accountsIntent = new Intent(activity, ListUserActivity.class);
+                                Intent accountsIntent = new Intent(activity, MainActivity.class);
                                 accountsIntent.putExtra("EMAIL", textInputEditTextEmail.getText().toString().trim());
                                 emptyInputEditText();
                                 startActivity(accountsIntent);

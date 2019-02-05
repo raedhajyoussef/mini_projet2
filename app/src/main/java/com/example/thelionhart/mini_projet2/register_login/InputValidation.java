@@ -1,4 +1,4 @@
-package com.example.thelionhart.mini_projet2;
+package com.example.thelionhart.mini_projet2.register_login;
 import android.app.Activity;
 import android.content.Context;
 import android.support.design.widget.TextInputEditText;

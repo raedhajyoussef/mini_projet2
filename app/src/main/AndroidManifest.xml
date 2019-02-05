@@ -12,7 +12,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".LoginActivity"
+            android:name=".register_login.LoginActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,12 +21,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Register_Activity"
+            android:name=".register_login.Register_Activity"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".ListUserActivity"
-            android:screenOrientation="portrait" />
-        <activity android:name=".Home"></activity>
+
     </application>
 
 </manifest>
